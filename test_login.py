@@ -12,7 +12,7 @@ URL = "https://demowebshop.tricentis.com/"
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(10)
     driver.get(URL)
 
     yield driver
